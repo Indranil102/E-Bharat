@@ -20,7 +20,7 @@ function App() {
         <Route path='/order' element={<Order/>} />
         <Route path='/cart' element={<Cart/>} />
         <Route path='/dashboard' element={<Dashboard/>} />
-        <Route path='/' element={<Nopage/>} />
+        <Route path='/nop' element={<Nopage/>} />
 
       </Routes>
     </Router>

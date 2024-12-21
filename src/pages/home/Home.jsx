@@ -4,9 +4,16 @@ import MyContext from "../../context/data/myContext";
 
 function Home() {
   const context=useContext(MyContext);
-  console.log(context)
+  console.log(context);
+  //const { name, rollno } = context;
+  const {state,color}=context;
     return (
-      <Layout>Home</Layout>
+      <Layout>
+        <h1>Name: {state.name}</h1>
+        <h1>Rollno: {state.rollno}</h1>
+        <p>my color : {color}</p>
+
+        </Layout>
     );
   }
   
