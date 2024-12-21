@@ -9,10 +9,11 @@ import Order from './pages/order/Order';
 import Cart from './pages/cart/Cart';
 import Dashboard from './pages/admin/dashboard/Dashboard';
 import Nopage from './pages/nopage/Nopage';
-
+import Mystate from './context/data/mystate';
 
 function App() {
   return (
+    <Mystate>
     <Router>
       <Routes>
         <Route path='/' element={<Home/>} />
@@ -23,6 +24,7 @@ function App() {
 
       </Routes>
     </Router>
+    </Mystate>
   )
 }
 
